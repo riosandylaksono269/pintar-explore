@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap');
+
+:root{
+  --bg:#eafbf0;
+  --bg-2:#fff6e0;
+  --card:#ffffff;
+  --line:#d8f0e0;
+  --accent:#ff9d42;
+  --accent-dark:#e8842b;
+  --green:#3fbf7f;
+  --green-dark:#2fa06a;
+  --pink:#ff7ab8;
+  --yellow:#ffcb47;
+  --text:#264b3a;
+  --muted:#6f9384;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html, body, #root{
+  height:100%;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(160deg,var(--bg),var(--bg-2));
+  color:var(--text);
+  font-family:'Nunito',sans-serif;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  overflow-x:hidden;
+}
+
+body::after{
+  content:'Intern Universitas Duta Bangsa Surakarta 2026';
+  position:fixed;
+  left:0; right:0;
+  bottom:calc(8px + env(safe-area-inset-bottom,0px));
+  text-align:center;
+  font-family:'Nunito',sans-serif;
+  font-size:0.72rem;
+  font-weight:600;
+  color:var(--muted);
+  opacity:.55;
+  pointer-events:none;
+  z-index:40;
+}
+
+h1,h2,h3,.brand{
+  font-family:'Baloo 2',sans-serif;
+}
+
+button{
+  font-family:inherit;
+}
